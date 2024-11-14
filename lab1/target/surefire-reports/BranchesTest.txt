@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: BranchesTest
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in BranchesTest
+branchTest7(BranchesTest)  Time elapsed: 0 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<1[/1/2004]> but was:<1[2/32/2003]>
+	at BranchesTest.branchTest7(BranchesTest.java:64)
+
+branchTest8(BranchesTest)  Time elapsed: 0 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Invalid Input Date]> but was:<[12/32/2021]>
+	at BranchesTest.branchTest8(BranchesTest.java:72)
+

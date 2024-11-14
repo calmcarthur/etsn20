@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: PredicatesTest
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in PredicatesTest
+predicateTest7(PredicatesTest)  Time elapsed: 0 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<1[/1/2004]> but was:<1[2/32/2003]>
+	at PredicatesTest.predicateTest7(PredicatesTest.java:64)
+
+predicateTest8(PredicatesTest)  Time elapsed: 0 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Invalid Input Date]> but was:<[12/32/2021]>
+	at PredicatesTest.predicateTest8(PredicatesTest.java:72)
+

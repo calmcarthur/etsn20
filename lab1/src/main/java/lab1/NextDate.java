@@ -1,18 +1,21 @@
-//package wb;
-//import java.io.*;
-//import java.util.*;
+package lab1;
+// import java.io.*;
+// import java.util.*;
 
 
 public class NextDate {
 	
-	
+	public int month;
+    public int day;
+    public int year;
+
 	public NextDate(int m, int d, int y)
 	{
 		//int month, day, year; //varibles holding the month, day and year args
 		//Initialize the mont, day, and year, respectively
-		//month = m;
-		//day = d;
-		//year = y;
+		this.month = m;
+		this.day = d;
+		this.year = y;
 	}
 	
 	
@@ -27,7 +30,7 @@ public class NextDate {
 		//Restrictions that the year must have the following invariant: 1801 <= year <= 2021
 		
 		if (day < 1 || month < 1 || month >12 || year < 1801 || year > 2021)
-			return "invalid Input Date";
+			return "Invalid Input Date";
 		
 		//these variables will hold the proper values for the nextDate's day, month, and year values, respectively
 		int tomorrowDay = day;
@@ -190,11 +193,11 @@ public class NextDate {
 	
 	public static void main(String[] args)
 	{
-		NextDateNew q;
+		NextDate q;
 		int month1, day1, year1;
 
 		
-		q =	new NextDateNew(
+		q =	new NextDate(
 				month1=Integer.parseInt(args[0]),
 				day1=Integer.parseInt(args[1]),
 				year1=Integer.parseInt(args[2]));

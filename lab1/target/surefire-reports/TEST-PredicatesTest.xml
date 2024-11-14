@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="PredicatesTest" time="0" tests="16" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/cal/Documents/3b/etsn20/lab1/target/test-classes:/Users/cal/Documents/3b/etsn20/lab1/target/classes:/Users/cal/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/cal/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/cal/.m2/repository/org/jacoco/jacoco-maven-plugin/0.8.12/jacoco-maven-plugin-0.8.12.jar:/Users/cal/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.jar:/Users/cal/.m2/repository/org/apache/maven/shared/file-management/3.1.0/file-management-3.1.0.jar:/Users/cal/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/cal/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/cal/.m2/repository/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.jar:/Users/cal/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.jar:/Users/cal/.m2/repository/org/jacoco/org.jacoco.agent/0.8.12/org.jacoco.agent-0.8.12-runtime.jar:/Users/cal/.m2/repository/org/jacoco/org.jacoco.core/0.8.12/org.jacoco.core-0.8.12.jar:/Users/cal/.m2/repository/org/ow2/asm/asm/9.7/asm-9.7.jar:/Users/cal/.m2/repository/org/ow2/asm/asm-commons/9.7/asm-commons-9.7.jar:/Users/cal/.m2/repository/org/ow2/asm/asm-tree/9.7/asm-tree-9.7.jar:/Users/cal/.m2/repository/org/jacoco/org.jacoco.report/0.8.12/org.jacoco.report-0.8.12.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CA"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/cal/Documents/3b/etsn20/lab1/target/surefire/surefirebooter4464529838831937207.jar /Users/cal/Documents/3b/etsn20/lab1/target/surefire 2024-11-14T12-07-23_899-jvmRun1 surefire9511366930287202141tmp surefire_0194229768639656318tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/cal/Documents/3b/etsn20/lab1/target/test-classes:/Users/cal/Documents/3b/etsn20/lab1/target/classes:/Users/cal/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/cal/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/cal/.m2/repository/org/jacoco/jacoco-maven-plugin/0.8.12/jacoco-maven-plugin-0.8.12.jar:/Users/cal/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.jar:/Users/cal/.m2/repository/org/apache/maven/shared/file-management/3.1.0/file-management-3.1.0.jar:/Users/cal/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/cal/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/cal/.m2/repository/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.jar:/Users/cal/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.jar:/Users/cal/.m2/repository/org/jacoco/org.jacoco.agent/0.8.12/org.jacoco.agent-0.8.12-runtime.jar:/Users/cal/.m2/repository/org/jacoco/org.jacoco.core/0.8.12/org.jacoco.core-0.8.12.jar:/Users/cal/.m2/repository/org/ow2/asm/asm/9.7/asm-9.7.jar:/Users/cal/.m2/repository/org/ow2/asm/asm-commons/9.7/asm-commons-9.7.jar:/Users/cal/.m2/repository/org/ow2/asm/asm-tree/9.7/asm-tree-9.7.jar:/Users/cal/.m2/repository/org/jacoco/org.jacoco.report/0.8.12/org.jacoco.report-0.8.12.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/cal"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/cal/Documents/3b/etsn20/lab1"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/cal/Documents/3b/etsn20/lab1/target/surefire/surefirebooter4464529838831937207.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="23.0.1+11-39"/>
+    <property name="user.name" value="cal"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.0.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/cal/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/2x/g4w75mwd3mb5hy_8hvzz4_580000gn/T/"/>
+    <property name="java.version" value="23.0.1"/>
+    <property name="user.dir" value="/Users/cal/Documents/3b/etsn20/lab1"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/cal/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="23.0.1+11-39"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="predicateTest1" classname="PredicatesTest" time="0"/>
+  <testcase name="predicateTest2" classname="PredicatesTest" time="0"/>
+  <testcase name="predicateTest3" classname="PredicatesTest" time="0"/>
+  <testcase name="predicateTest4" classname="PredicatesTest" time="0"/>
+  <testcase name="predicateTest5" classname="PredicatesTest" time="0"/>
+  <testcase name="predicateTest6" classname="PredicatesTest" time="0"/>
+  <testcase name="predicateTest7" classname="PredicatesTest" time="0">
+    <failure message="expected:&lt;1[/1/2004]&gt; but was:&lt;1[2/32/2003]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<1[/1/2004]> but was:<1[2/32/2003]>
+	at PredicatesTest.predicateTest7(PredicatesTest.java:64)
+]]></failure>
+  </testcase>
+  <testcase name="predicateTest8" classname="PredicatesTest" time="0">
+    <failure message="expected:&lt;[Invalid Input Date]&gt; but was:&lt;[12/32/2021]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[Invalid Input Date]> but was:<[12/32/2021]>
+	at PredicatesTest.predicateTest8(PredicatesTest.java:72)
+]]></failure>
+  </testcase>
+  <testcase name="predicateTest9" classname="PredicatesTest" time="0"/>
+  <testcase name="predicateTest10" classname="PredicatesTest" time="0"/>
+  <testcase name="predicateTest11" classname="PredicatesTest" time="0"/>
+  <testcase name="predicateTest12" classname="PredicatesTest" time="0"/>
+  <testcase name="predicateTest14" classname="PredicatesTest" time="0"/>
+  <testcase name="predicateTest15" classname="PredicatesTest" time="0"/>
+  <testcase name="predicateTest16" classname="PredicatesTest" time="0"/>
+  <testcase name="predicateTest19" classname="PredicatesTest" time="0"/>
+</testsuite>
