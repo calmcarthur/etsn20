@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: StatementsTest
 -------------------------------------------------------------------------------
-Tests run: 15, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in StatementsTest
-statementTest7(StatementsTest)  Time elapsed: 0 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<1[/1/2004]> but was:<1[2/32/2003]>
-	at StatementsTest.statementTest7(StatementsTest.java:64)
-
-statementTest8(StatementsTest)  Time elapsed: 0 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<[Invalid Input Date]> but was:<[12/32/2021]>
-	at StatementsTest.statementTest8(StatementsTest.java:72)
-
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in StatementsTest
