@@ -106,7 +106,7 @@ public class BranchesTest {
 
     @Test
     // Last day in February when leap year by mod 100 and 400
-    public void branchTest14() {	   
+    public void branchTest13() {	   
        NextDate d = new NextDate(2, 29, 2000);
        String result = d.run(d.month, d.day, d.year);
        assertEquals("3/1/2000", result);    
@@ -114,7 +114,7 @@ public class BranchesTest {
 
     @Test
     // Last day in February when leap year by mod 100, but not 400
-    public void branchTest15() {	   
+    public void branchTest14() {	   
        NextDate d = new NextDate(2, 29, 1900);
        String result = d.run(d.month, d.day, d.year);
        assertEquals("Invalid Input Date", result);    
@@ -122,7 +122,7 @@ public class BranchesTest {
 
     @Test
     // Last day in February when leap year by mod 4, but not 100
-    public void branchTest16() {	   
+    public void branchTest15() {	   
        NextDate d = new NextDate(2, 29, 2004);
        String result = d.run(d.month, d.day, d.year);
        assertEquals("3/1/2004", result);    

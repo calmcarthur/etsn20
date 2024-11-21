@@ -106,7 +106,7 @@ public class StatementsTest {
 
     @Test
     // Last day in February when leap year by mod 100 and 400
-    public void statementTest14() {	   
+    public void statementTest13() {	   
        NextDate d = new NextDate(2, 29, 2000);
        String result = d.run(d.month, d.day, d.year);
        assertEquals("3/1/2000", result);    
@@ -114,7 +114,7 @@ public class StatementsTest {
 
     @Test
     // Last day in February when leap year by mod 100, but not 400
-    public void statementTest15() {	   
+    public void statementTest14() {	   
        NextDate d = new NextDate(2, 29, 1900);
        String result = d.run(d.month, d.day, d.year);
        assertEquals("Invalid Input Date", result);    
@@ -122,10 +122,18 @@ public class StatementsTest {
 
     @Test
     // Last day in February when leap year by mod 4, but not 100
-    public void statementTest16() {	   
+    public void statementTest15() {	   
        NextDate d = new NextDate(2, 29, 2004);
        String result = d.run(d.month, d.day, d.year);
        assertEquals("3/1/2004", result);    
+    }
+    
+    @Test
+    // Day is greater than 29 in February
+    public void statementTest16() {	   
+       NextDate d = new NextDate(2, 30, 2004);
+       String result = d.run(d.month, d.day, d.year);
+       assertEquals("Invalid Input Date", result);    
     }
 
 }

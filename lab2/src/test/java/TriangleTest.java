@@ -50,7 +50,7 @@ public class TriangleTest {
 		triangle = null;
 	}
 
-	// Test cases for classify
+	// EP test cases for classify()
 	// 1
 	@Test
 	public void testClassifyEquilateral() {
@@ -81,6 +81,7 @@ public class TriangleTest {
 		triangle.setSideLengths(2, 2, 4);
 		assertEquals("impossible", triangle.classify());
 	}
+	// BVA test cases for classify()
 	// 6
 	@Test
 	public void testClassifyBoundaryEquilateral() {
@@ -141,8 +142,7 @@ public class TriangleTest {
 		triangle.setSideLengths(-1000, 1, 1);
 		assertEquals("impossible", triangle.classify());
 	}
-
-	// Test cases for getArea()
+	// EP test cases for getArea()
 	// 16
 	@Test
 	public void testGetAreaValidTriangle() {
@@ -161,6 +161,7 @@ public class TriangleTest {
 		triangle.setSideLengths(-1, 4, 4);
 		assertEquals(-1.0, triangle.getArea(), 0.01);
 	}
+	// BVA test cases for getArea()
 	// 19
 	@Test
 	public void testGetAreaMinimalValidTriangle() {
@@ -197,8 +198,7 @@ public class TriangleTest {
 		triangle.setSideLengths(-1000, 1, 1);
 		assertEquals(-1, triangle.getArea(), 0.01);
 	}
-
-	// Test cases for getPerimeter()
+	// EP test cases for getPerimeter()
 	// 25
 	@Test
 	public void testGetPerimeterValidTriangle() {
@@ -217,6 +217,7 @@ public class TriangleTest {
 		triangle.setSideLengths(-1, 1, 2);
 		assertEquals(-1, triangle.getPerimeter());
 	}
+	// BVA test cases for getPerimeter()
 	// 28
 	@Test
 	public void testGetPerimeterMinimalValidTriangle() {
@@ -253,14 +254,14 @@ public class TriangleTest {
 		triangle.setSideLengths(-1000, 1, 1);
 		assertEquals(-1, triangle.getPerimeter());
 	}
-
-	// Test cases for getSideLengths()
+	// EP test cases for getSideLengths()
 	// 34
 	@Test
 	public void testGetSideLengths() {
 		triangle.setSideLengths(2, 3, 4);
 		assertEquals(new String("2,3,4"), triangle.getSideLengths());
 	}
+	// BVA test cases for getSideLengths()
 	// 35
 	@Test
 	public void testGetSideLengthsMinimalValidTriangle() {
@@ -273,8 +274,7 @@ public class TriangleTest {
 		triangle.setSideLengths(1000, 1000, 1000);
 		assertEquals(new String("1000,1000,1000"), triangle.getSideLengths());
 	}
-
-	// Test cases for isEquilateral()
+	// EP test cases for isEquilateral()
 	// 37
 	@Test
 	public void testIsEquilateralTrue() {
@@ -287,6 +287,7 @@ public class TriangleTest {
 		triangle.setSideLengths(2, 2, 3);
 		assertFalse(triangle.isEquilateral());
 	}
+	// BVA test cases for isEquilateral()
 	// 39
 	@Test
 	public void testIsEquilateralMinimumEquilateralTriangle() {
@@ -311,8 +312,7 @@ public class TriangleTest {
 		triangle.setSideLengths(1000, 999, 998);
 		assertFalse(triangle.isEquilateral());
 	}
-
-	// Test cases for isImpossible()
+	// EP test cases for isImpossible()
 	// 43
 	@Test
 	public void testIsImpossibleTrue() {
@@ -325,6 +325,7 @@ public class TriangleTest {
 		triangle.setSideLengths(3, 4, 5);
 		assertFalse(triangle.isImpossible());
 	}
+	// BVA test cases for isImpossible()
 	// 45
 	@Test
 	public void testIsImpossibleMinimumImpossibleTriangle() {
@@ -349,8 +350,7 @@ public class TriangleTest {
 		triangle.setSideLengths(1000, 999, 998);
 		assertFalse(triangle.isImpossible());
 	}
-
-	// Test cases for isIsosceles()
+	// EP test cases for isIsosceles()
 	// 49
 	@Test
 	public void testIsIsoscelesTrue() {
@@ -363,6 +363,7 @@ public class TriangleTest {
 		triangle.setSideLengths(3, 4, 5);
 		assertFalse(triangle.isIsosceles());
 	}
+	// BVA test cases for isIsosceles()
 	// 51
 	@Test
 	public void testIsIsoscelesMinimumIsoscelesTriangle() {
@@ -387,8 +388,7 @@ public class TriangleTest {
 		triangle.setSideLengths(1000, 999, 998);
 		assertFalse(triangle.isIsosceles());
 	}
-
-	// Test cases for isRightAngled()
+	// EP test cases for isRightAngled()
 	// 55
 	@Test
 	public void testIsRightAngledTrue() {
@@ -401,6 +401,7 @@ public class TriangleTest {
 		triangle.setSideLengths(1, 1, 1);
 		assertFalse(triangle.isRightAngled());
 	}
+	// BVA test cases for isRightAngled()
 	// 57
 	@Test
 	public void testIsRightAngledMinimumRightAngledTriangle() {
@@ -425,8 +426,7 @@ public class TriangleTest {
 		triangle.setSideLengths(1000, 999, 998);
 		assertFalse(triangle.isRightAngled());
 	}
-
-	// Test cases for isScalene()
+	// EP test cases for isScalene()
 	// 61
 	@Test
 	public void testIsScaleneTrue() {
@@ -439,6 +439,7 @@ public class TriangleTest {
 		triangle.setSideLengths(2, 2, 5);
 		assertFalse(triangle.isScalene());
 	}
+	// BVA test cases for isScalene()
 	// 63
 	@Test
 	public void testIsScaleneMinimumScaleneTriangle() {
@@ -463,18 +464,24 @@ public class TriangleTest {
 		triangle.setSideLengths(666, 666, 999);
 		assertFalse(triangle.isScalene());
 	}
-	// Test cases for setSideLengths()
+	// EP test cases for setSideLengths()
 	// 67
 	@Test
-	public void testSetSideLengthsValid() {
+	public void testSetSideLengths() {
 		triangle.setSideLengths(2, 3, 4);
 		assertEquals(new String("2,3,4"), triangle.getSideLengths());
 	}
+	// BVA test cases for setSideLengths()
 	// 68
 	@Test
-	public void testSetSideLengthsInvalid() {
-		triangle.setSideLengths(-1, -1, -1);
-		assertEquals(new String("-1,-1,-1"), triangle.getSideLengths()); // Assuming default side lengths are 0
+	public void testSetSideLengthsValidMinimum() {
+		triangle.setSideLengths(1, 1, 1);
+		assertEquals(new String("1,1,1"), triangle.getSideLengths());
 	}
-
+	// 79
+	@Test
+	public void testSetSideLengthsValidMaximum() {
+		triangle.setSideLengths(1000, 1000, 1000);
+		assertEquals(new String("1000,1000,1000"), triangle.getSideLengths());
+	}
 }

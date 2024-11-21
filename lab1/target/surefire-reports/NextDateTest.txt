@@ -1,4 +1,28 @@
 -------------------------------------------------------------------------------
 Test set: NextDateTest
 -------------------------------------------------------------------------------
-Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s - in NextDateTest
+Tests run: 46, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.041 s <<< FAILURE! - in NextDateTest
+statementTest7(StatementsTest)  Time elapsed: 0.003 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<1[/1/2004]> but was:<1[2/32/2003]>
+	at StatementsTest.statementTest7(StatementsTest.java:64)
+
+statementTest8(StatementsTest)  Time elapsed: 0.001 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Invalid Input Date]> but was:<[12/32/2021]>
+	at StatementsTest.statementTest8(StatementsTest.java:72)
+
+branchTest7(BranchesTest)  Time elapsed: 0 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<1[/1/2004]> but was:<1[2/32/2003]>
+	at BranchesTest.branchTest7(BranchesTest.java:64)
+
+branchTest8(BranchesTest)  Time elapsed: 0 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Invalid Input Date]> but was:<[12/32/2021]>
+	at BranchesTest.branchTest8(BranchesTest.java:72)
+
+predicateTest7(PredicatesTest)  Time elapsed: 0 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<1[/1/2004]> but was:<1[2/32/2003]>
+	at PredicatesTest.predicateTest7(PredicatesTest.java:64)
+
+predicateTest8(PredicatesTest)  Time elapsed: 0.001 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Invalid Input Date]> but was:<[12/32/2021]>
+	at PredicatesTest.predicateTest8(PredicatesTest.java:72)
+
