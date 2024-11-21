@@ -161,8 +161,6 @@ public class TriangleTest {
 		triangle.setSideLengths(-1, 4, 4);
 		assertEquals(-1.0, triangle.getArea(), 0.01);
 	}
-
-	// Test cases for getArea()
 	// 19
 	@Test
 	public void testGetAreaMinimalValidTriangle() {
