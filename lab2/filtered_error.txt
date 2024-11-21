@@ -1,0 +1,90 @@
+%FAILED 14,testGetAreaJustPossibleTriangle(TriangleTest)
+%TRACES 
+java.lang.AssertionError: expected:<1.98> but was:<0.0>
+        at org.junit.Assert.fail(Assert.java:88)
+        at org.junit.Assert.failNotEquals(Assert.java:834)
+        at org.junit.Assert.assertEquals(Assert.java:553)
+%FAILED 15,testGetPerimeterLargeInvalidTriangle(TriangleTest)
+%TRACES 
+java.lang.AssertionError: expected:<-1> but was:<-998>
+        at org.junit.Assert.fail(Assert.java:88)
+        at org.junit.Assert.failNotEquals(Assert.java:834)
+        at org.junit.Assert.assertEquals(Assert.java:645)
+%FAILED 18,testClassifyMinimumIsosceles(TriangleTest)
+%EXPECTS
+isosceles
+%EXPECTE
+%ACTUALS
+isossceles
+%FAILED 21,testClassifyMaximumIsosceles(TriangleTest)
+%EXPECTS
+isosceles
+%EXPECTE
+%ACTUALS
+isossceles
+%FAILED 23,testGetAreaImpossibleTriangle(TriangleTest)
+%TRACES 
+java.lang.AssertionError: expected:<-1.0> but was:<0.0>
+        at org.junit.Assert.fail(Assert.java:88)
+        at org.junit.Assert.failNotEquals(Assert.java:834)
+        at org.junit.Assert.assertEquals(Assert.java:553)
+%FAILED 35,testGetAreaLargeValidTriangle(TriangleTest)
+%TRACES 
+java.lang.AssertionError: expected:<433000.0> but was:<NaN>
+        at org.junit.Assert.fail(Assert.java:88)
+        at org.junit.Assert.failNotEquals(Assert.java:834)
+        at org.junit.Assert.assertEquals(Assert.java:553)
+%FAILED 36,testGetPerimeterJustImpossibleTriangle(TriangleTest)
+%TRACES 
+java.lang.AssertionError: expected:<-1> but was:<4>
+        at org.junit.Assert.fail(Assert.java:88)
+        at org.junit.Assert.failNotEquals(Assert.java:834)
+        at org.junit.Assert.assertEquals(Assert.java:645)
+%FAILED 38,testClassifyIsosceles(TriangleTest)
+%EXPECTS
+isosceles
+%EXPECTE
+%ACTUALS
+isossceles
+%FAILED 43,testGetPerimeterInvalidInputs(TriangleTest)
+%TRACES 
+java.lang.AssertionError: expected:<-1> but was:<2>
+        at org.junit.Assert.fail(Assert.java:88)
+        at org.junit.Assert.failNotEquals(Assert.java:834)
+        at org.junit.Assert.assertEquals(Assert.java:645)
+%FAILED 44,testClassifyImpossible(TriangleTest)
+%EXPECTS
+impossible
+%EXPECTE
+%ACTUALS
+isossceles
+%FAILED 49,testIsImpossibleMinimumImpossibleTriangle(TriangleTest)
+%TRACES 
+java.lang.AssertionError
+        at org.junit.Assert.fail(Assert.java:86)
+        at org.junit.Assert.assertTrue(Assert.java:41)
+        at org.junit.Assert.assertTrue(Assert.java:52)
+%FAILED 51,testIsImpossibleMaximumImpossibleTriangle(TriangleTest)
+%TRACES 
+java.lang.AssertionError
+        at org.junit.Assert.fail(Assert.java:86)
+        at org.junit.Assert.assertTrue(Assert.java:41)
+        at org.junit.Assert.assertTrue(Assert.java:52)
+%FAILED 58,testGetAreaJustImpossibleTriangle(TriangleTest)
+%TRACES 
+java.lang.AssertionError: expected:<-1.0> but was:<0.0>
+        at org.junit.Assert.fail(Assert.java:88)
+        at org.junit.Assert.failNotEquals(Assert.java:834)
+        at org.junit.Assert.assertEquals(Assert.java:553)
+%FAILED 61,testGetPerimeterMinimumInvalidTriangle(TriangleTest)
+%TRACES 
+java.lang.AssertionError: expected:<-1> but was:<2>
+        at org.junit.Assert.fail(Assert.java:88)
+        at org.junit.Assert.failNotEquals(Assert.java:834)
+        at org.junit.Assert.assertEquals(Assert.java:645)
+%FAILED 68,testIsImpossibleTrue(TriangleTest)
+%TRACES 
+java.lang.AssertionError
+        at org.junit.Assert.fail(Assert.java:86)
+        at org.junit.Assert.assertTrue(Assert.java:41)
+        at org.junit.Assert.assertTrue(Assert.java:52)
